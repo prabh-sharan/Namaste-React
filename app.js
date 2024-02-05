@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 //multiple children
 /* <div id="parent">
     <div id="child">
@@ -11,7 +14,7 @@ const parent= React.createElement(
     "div",
     {id:"parent"},[
         React.createElement("div",{id:"child"},
-        [React.createElement("h1", {}, "I'm an h1 tag"),
+        [React.createElement("h1", {}, "Learning react"),
         React.createElement("h2", {}, "I'm an h2 tag")
     
         ]),
@@ -28,7 +31,7 @@ const parent= React.createElement(
 //     {id:"heading"},
 //     "Hello word using React"
 // );
-console.log(parent)
+// console.log(parent)
 const root=ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(parent);
